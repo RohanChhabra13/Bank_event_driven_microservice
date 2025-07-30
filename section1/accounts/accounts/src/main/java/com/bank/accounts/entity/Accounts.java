@@ -27,7 +27,4 @@ public class Accounts extends BaseEntity {
 
     @Column(name = "account_type")
     public String AccountType;
-
-    @Column(name = "created_by")
-    private String createdBy;
 }
