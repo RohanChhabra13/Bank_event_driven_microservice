@@ -1,0 +1,40 @@
+services:
+  accounts:
+    image: heherohan/accounts:v1
+    container_name: accounts-service
+    ports:
+      - "8080:8080"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - bank
+
+  loans:
+    image: heherohan/loans:v1
+    container_name: loans-service
+    ports:
+      - "8090:8090"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - bank
+
+  cards:
+    image: heherohan/cards:v1
+    container_name: cards-service
+    ports:
+      - "9001:9001"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - bank
+
+networks:
+  bank:
+    driver: bridge
