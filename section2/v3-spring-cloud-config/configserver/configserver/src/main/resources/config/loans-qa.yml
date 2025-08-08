@@ -1,0 +1,15 @@
+spring:
+  config:
+    activate:
+      on-profile: "qa"
+
+build:
+  version: "2.0"
+
+loans:
+  message: "Welcome to Bank loans related QA APIs "
+  contactDetails:
+    name: "QA Lead"
+    email: "qa@bank.com"
+  onCallSupport:
+    - 0000000000

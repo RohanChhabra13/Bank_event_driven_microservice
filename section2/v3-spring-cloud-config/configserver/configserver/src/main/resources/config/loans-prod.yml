@@ -1,0 +1,15 @@
+spring:
+  config:
+    activate:
+      on-profile: "prod"
+
+build:
+  version: "1.0"
+
+loans:
+  message: "Welcome to Bank loans related prod APIs "
+  contactDetails:
+    name: "Product Owner"
+    email: "po@bank.com"
+  onCallSupport:
+    - 0000000000

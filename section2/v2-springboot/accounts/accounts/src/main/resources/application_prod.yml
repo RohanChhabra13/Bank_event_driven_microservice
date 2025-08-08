@@ -1,0 +1,15 @@
+spring:
+  config:
+    activate:
+      on-profile: "prod"
+
+build:
+  version: "1.0"
+
+accounts:
+  message: "hehe Prod"
+  contact details:
+    name: "Rohan Chhabra"
+    email: "hehe"
+  onCallSupport:
+    - 0000000000

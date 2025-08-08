@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: "configserver"
+  profiles:
+    #active: native
+    active: git
+  cloud:
+    config:
+      server:
+        git:
+          uri: "https://github.com"
+          default-label: main
+          timeout: 5
+          clone-on-start: true
+          force-pull: true
+#        native:
+#          #search-locations: "classpath:/config"
+#          search-locations: "file:///C://Users//XZ143UK//bankproject//config"
+
+server:
+  port: 8071

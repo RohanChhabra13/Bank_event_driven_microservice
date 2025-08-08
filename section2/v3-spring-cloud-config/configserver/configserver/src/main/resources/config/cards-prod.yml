@@ -1,0 +1,15 @@
+spring:
+  config:
+    activate:
+      on-profile: "prod"
+
+build:
+  version: "1.0"
+
+cards:
+  message: "Welcome to Bank cards related prod APIs "
+  contactDetails:
+    name: "Product Owner"
+    email: "po@eazybank.com"
+  onCallSupport:
+    - 0000000000
