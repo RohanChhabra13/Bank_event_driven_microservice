@@ -8,7 +8,7 @@ spring:
     config:
       server:
         git:
-          uri: "https://github.com/RohanChhabra13/Bank_event_driven_microservice"
+          uri: "git@github.com:RohanChhabra13/Bank_event_driven_microservice.git"
           default-label: main
           timeout: 5
           clone-on-start: true
